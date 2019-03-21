@@ -1,5 +1,5 @@
 # node-train-delay
-notification for train delaying
+Notify for train delaying by LINE Notify
 
 ## start container
 ```
@@ -18,7 +18,12 @@ docker exec -it node-line-notify node index.js
 docker exec -it node-line-notify /bin/sh
 ```
 
-## down container(stop & remove)
+## stop container
+```
+docker exec -it node-line-notify /bin/sh
+```
+
+## down(stop & remove) container
 ```
 docker exec -it node-line-notify /bin/sh
 ```
