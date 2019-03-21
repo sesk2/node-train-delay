@@ -10,17 +10,17 @@ docker-compose ps
 
 ## run line notify
 ```
-docker exec -it node8-line-notify node index.js
+docker exec -it node-line-notify node index.js
 ```
 
 ## login container
 ```
-docker exec -it node8-line-notify /bin/sh
+docker exec -it node-line-notify /bin/sh
 ```
 
 ## check logs
 ```
-docker logs node8-line-notify
+docker logs node-line-notify
 ```
 
 
