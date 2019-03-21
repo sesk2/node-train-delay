@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node8:
+    container_name: node8-axios
+    build: .
+    image: ses2/node:8-axios
+    tty: true
+    volumes:
+      - ./app:/app
+    
