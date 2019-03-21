@@ -13,6 +13,8 @@ myDelay.getDelayData().then(function(res){
        // Send messages via LINE Notify
        if(data.name == "東海道線" || data.name == "上野東京ライン"){
            myLine.notify("現在、" + data.name + "が遅延しています。");
+       } else {
+           myLine.notify("現在、東海道線と上野東京ラインで遅延情報はありません。");
        }
     });
 });
