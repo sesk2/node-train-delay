@@ -18,6 +18,11 @@ docker exec -it node-line-notify node index.js
 docker exec -it node-line-notify /bin/sh
 ```
 
+## down container(stop & remove)
+```
+docker exec -it node-line-notify /bin/sh
+```
+
 ## check logs
 ```
 docker logs node-line-notify
