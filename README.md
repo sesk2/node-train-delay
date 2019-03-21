@@ -3,6 +3,7 @@ notification for train delaying
 
 ## start container
 ```
+export LINE_TOKEN='{token}'  # set line notify token
 docker-compose up -d
 docker-compose ps
 ```

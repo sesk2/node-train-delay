@@ -4,6 +4,8 @@ services:
     container_name: node8-axios
     build: .
     image: ses2/node:8-axios
+    environment: 
+      - LINE_TOKEN="$LINE_TOKEN"
     tty: true
     volumes:
       - ./app:/app
