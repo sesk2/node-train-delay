@@ -2,7 +2,6 @@ version: '3'
 services:
   node8:
     container_name: node-line-notify
-    build: .
     image: ses2/node:8
     tty: true
     volumes:
