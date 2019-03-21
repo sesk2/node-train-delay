@@ -42,6 +42,6 @@ myDelay.getDelayData().then(function(res){
           names = check_item.name;
         }
       });
-      myLine.notify("現在、[" + names + "]で遅延情報はありません。");
+      myLine.notify("\n現在、[" + names + "]で遅延情報はありません。");
     }
 });
