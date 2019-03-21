@@ -10,17 +10,17 @@ docker-compose ps
 
 ## run line notify
 ```
-docker exec -it node8-axios node index.js
+docker exec -it node8-line-notify node index.js
 ```
 
 ## login container
 ```
-docker exec -it node8-axios /bin/sh
+docker exec -it node8-line-notify /bin/sh
 ```
 
 ## check logs
 ```
-docker logs node8-axios
+docker logs node8-line-notify
 ```
 
 
