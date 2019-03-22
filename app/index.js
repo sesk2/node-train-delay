@@ -29,7 +29,7 @@ myDelay.getDelayData().then(function(res){
       // Send messages via LINE Notify
       CHECK_LIST.forEach(function(check_item){
         if(data.name == check_item.name && data.company == check_item.company){
-          myLine.notify("現在、" + check_item.name + "が遅延しています。\n" + check_item.website);
+          myLine.notify("[電車遅延情報]\n現在、\"" + check_item.name + "\" が遅延しています。\n" + check_item.website);
           check++;
         }
       });
@@ -42,6 +42,6 @@ myDelay.getDelayData().then(function(res){
           names = check_item.name;
         }
       });
-      myLine.notify("\n現在、[" + names + "]で遅延情報はありません。");
+      myLine.notify("[電車遅延情報]\n現在、\"" + names + "\" で遅延情報はありません。");
     }
 });
