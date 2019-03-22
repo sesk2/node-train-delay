@@ -8,39 +8,27 @@ docker-compose up -d
 docker-compose ps
 ```
 
-## run line notify
+## run train-delay
 ```
-docker exec -it node-line-notify node index.js
+docker exec -it node-train-delay node index.js
 ```
 
 ## login container
 ```
-docker exec -it node-line-notify /bin/sh
+docker exec -it node-train-delay /bin/sh
 ```
 
 ## stop container
 ```
-docker exec -it node-line-notify /bin/sh
+docker-compose stop
 ```
 
 ## down(stop & remove) container
 ```
-docker exec -it node-line-notify /bin/sh
+docker-compose down
 ```
 
 ## check logs
 ```
-docker logs node-line-notify
+docker logs node-train-delay
 ```
-
-
-
-## update docker image
-```
-docker login
-docker-compose build --no-cache
-docker-compose push
-```
-
-
-

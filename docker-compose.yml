@@ -1,8 +1,8 @@
 version: '3'
 services:
-  node8:
-    container_name: node-line-notify
-    image: ses2/node:8
+  node-train-delay:
+    container_name: node-train-delay
+    image: ses2/node:8-axios
     environment:
       - LINE_TOKEN=$LINE_TOKEN
     tty: true
